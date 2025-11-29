@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Joshua Komosia | Portfolio</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<nav>
+  <div class="logo">Joshua.</div>
+  <ul class="nav-links">
+    <li><a href="#hero">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<section id="hero">
+  <h1>Hello, I'm Joshua Komosia</h1>
+  <p>Frontend Developer | Designer | Freelancer</p>
+  <a href="#contact" class="btn">Hire Me</a>
+</section>
+
+<section id="about">
+  <h2>About Me</h2>
+  <p>I am a passionate web developer creating modern, responsive, and functional websites for clients and businesses.</p>
+</section>
+
+<section id="services">
+  <h2>My Services</h2>
+  <div class="service-container">
+    <div class="service-card">
+      <h3>Web Design</h3>
+      <p>Modern, responsive designs for any project.</p>
+    </div>
+    <div class="service-card">
+      <h3>Web Development</h3>
+      <p>Fast, clean, and scalable websites & apps.</p>
+    </div>
+    <div class="service-card">
+      <h3>SEO Optimization</h3>
+      <p>Improve visibility and search engine ranking.</p>
+    </div>
+  </div>
+</section>
+
+<section id="skills">
+  <h2>My Skills</h2>
+  <div class="skill">
+    <p>HTML</p>
+    <div class="skill-bar"><div class="skill-level" style="width:90%">90%</div></div>
+  </div>
+  <div class="skill">
+    <p>CSS</p>
+    <div class="skill-bar"><div class="skill-level" style="width:85%">85%</div></div>
+  </div>
+  <div class="skill">
+    <p>JavaScript</p>
+    <div class="skill-bar"><div class="skill-level" style="width:80%">80%</div></div>
+  </div>
+</section>
+
+<section id="projects">
+  <h2 class="section-title">My Projects</h2>
+  <div class="projects-grid">
+    <div class="project">
+      <h3>DJ Website</h3>
+      <p>Website for DJ BARDEN 254 with booking system, gallery and modern UI.</p>
+      <a class="btn-project" href="https://github.com/Komosia23/DJay-Barden-254" target="_blank">View Project →</a>
+    </div>
+    <div class="project">
+      <h3>Portfolio Website</h3>
+      <p>A personal portfolio website showcasing my skills and work in web development.</p>
+      <a class="btn-project" href="https://github.com/Komosia23" target="_blank">View Project →</a>
+    </div>
+    <div class="project">
+      <h3>KE Farm Link</h3>
+      <p>A platform that connects farmers and buyers with product listings and easy communication.</p>
+      <a class="btn-project" href="https://github.com/Komosia23/ke-farm-link" target="_blank">View Project →</a>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Contact Me</h2>
+  <form>
+    <input type="text" placeholder="Your Name" required>
+    <input type="email" placeholder="Your Email" required>
+    <textarea placeholder="Your Message" required></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+</section>
+
+<footer>
+  <p>© 2025 Joshua Komosia. All rights reserved.</p>
+  <div class="socials">
+    <a href="https://www.linkedin.com/in/joshua-komosia-91405b322" target="_blank">LinkedIn</a>
+    <a href="https://github.com/Komosia23" target="_blank">GitHub</a>
+    <a href="https://www.instagram.com/barden_ke" target="_blank">Instagram</a>
+    <a href="https://www.facebook.com/BARDEN.KE" target="_blank">Facebook</a>
+  </div>
+</footer>
+
+<script>
+window.addEventListener('scroll', function() {
+  const skills = document.querySelectorAll('.skill-level');
+  skills.forEach(skill => {
+    const rect = skill.getBoundingClientRect();
+    if(rect.top < window.innerHeight - 50) {
+      skill.style.width = skill.getAttribute('style').split(":")[1];
+    }
+  });
+});
+</script>
+
+</body>
+</html>
