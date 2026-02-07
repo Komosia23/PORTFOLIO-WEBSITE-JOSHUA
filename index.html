@@ -5,6 +5,27 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Joshua Komosia | Portfolio</title>
   <link rel="stylesheet" href="style.css">
+  <style>
+    /* Added iframe styling for embedded DJ project */
+    .iframe-container {
+      position: relative;
+      width: 100%;
+      padding-bottom: 56.25%; /* 16:9 aspect ratio */
+      height: 0;
+      overflow: hidden;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      margin-top: 10px;
+    }
+
+    .iframe-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+  </style>
 </head>
 <body>
 
@@ -70,8 +91,10 @@
   <div class="projects-grid">
     <div class="project">
       <h3>DJ Website</h3>
-      <p>Website for DJ BARDEN 254 with music, mixes, and modern UI.</p>
-      <a class="btn-project" href="https://komosia23.github.io/-BARDEN-THE-DJ/#music" target="_blank">View Project →</a>
+      <p>Website for DJ BARDEN 254 with music, mixes, and modern UI. Play and explore without leaving this page.</p>
+      <div class="iframe-container">
+        <iframe src="https://komosia23.github.io/-BARDEN-THE-DJ/#music" frameborder="0" allowfullscreen></iframe>
+      </div>
     </div>
     <div class="project">
       <h3>Portfolio Website</h3>
