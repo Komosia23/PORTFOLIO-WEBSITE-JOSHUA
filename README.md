@@ -25,29 +25,12 @@ Tools
 Git & GitHub
 VS Code
 Figma
-📂 Featured Projects
-🌐 Personal Portfolio
 
 A responsive portfolio website showcasing my skills, projects, and experience.
-
-🚀 [Project Name]
-
-Add a short description of one of your best projects here.
-
-Tech: HTML, CSS, JavaScript
-
-📱 [Project Name]
-
-Add another project and briefly explain what you built.
-
-Tech: [Technologies used]
 
 📊 GitHub Stats
 
 📫 Let's Connect
-🌐 Portfolio: [Your Website]
-💼 LinkedIn: [Your LinkedIn]
-🐙 GitHub: [Your GitHub]
 📧 Email: [joshuakomosia0134@gmail.com]
 
 ⭐ Thanks for visiting my GitHub profile!
