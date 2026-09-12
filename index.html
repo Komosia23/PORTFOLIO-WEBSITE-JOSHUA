@@ -2,174 +2,903 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Joshua Komosia | Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta
+    name="description"
+    content="Joshua Komosia — Frontend Developer creating responsive, modern and user-friendly websites."
+  >
+
+  <title>Joshua Komosia | Frontend Developer</title>
+
   <link rel="stylesheet" href="style.css">
-  <style>
-    /* Iframe preview styling for DJ project */
-    .iframe-container {
-      position: relative;
-      width: 100%;
-      padding-bottom: 35%; /* smaller preview */
-      height: 0;
-      overflow: hidden;
-      border-radius: 10px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-      margin-top: 10px;
-    }
 
-    .iframe-container iframe {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-    }
-
-    .btn-project {
-      display: inline-block;
-      margin-top: 10px;
-      padding: 10px 20px;
-      background-color: #4CAF50;
-      color: #fff;
-      text-decoration: none;
-      border-radius: 5px;
-      transition: background 0.3s;
-    }
-
-    .btn-project:hover {
-      background-color: #45a049;
-    }
-  </style>
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  >
 </head>
+
 <body>
 
-<nav>
-  <div class="logo">Joshua.</div>
-  <ul class="nav-links">
-    <li><a href="#hero">Home</a></li>
-    <li><a href="#about">About</a></li>
-    <li><a href="#services">Services</a></li>
-    <li><a href="#skills">Skills</a></li>
-    <li><a href="#projects">Projects</a></li>
-    <li><a href="#contact">Contact</a></li>
-  </ul>
-</nav>
+  <!-- ================= NAVIGATION ================= -->
 
-<section id="hero">
-  <h1>Hello, I'm Joshua Komosia</h1>
-  <p>WELCOME</h2>
-  <p>“Frontend Developer building fast, responsive, and user-friendly websites for businesses and individuals.” </p>
-  <a href="#contact" class="btn">Hire Me</a>
-</section>
+  <header class="header">
+    <nav class="navbar container">
 
-<section id="about">
-  <h2>About Me</h2>
-  <p> “ I'm a frontend developer focused on creating responsive, modern, and user-friendly websites.
+      <a href="#home" class="logo">
+        Joshua<span>.</span>
+      </a>
 
-I work with HTML, CSS, and JavaScript to turn ideas into functional web experiences. I've built projects ranging from business and personal websites to platforms designed to solve real-world problems.
+      <button class="menu-toggle" aria-label="Open navigation menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
 
-I care about clean design, responsive layouts, usability, and writing maintainable code. I'm constantly expanding my skills and looking for opportunities to build better digital experiences.”.”</p>
-</section>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
 
-<section id="My work">
-  <h2>Why work with me</h2>
-  <div class="service-container">
-    <div class="Why work-card">
-      <h3>Responsive Design </h3>
-      <p>I build websites that look and work smoothly across phones,
-          tablets, laptops, and desktop screens..</p>
-    </div>
-    <div class="service-card">
-      <h3>Web Development</h3>
-      <p>Fast, clean, and scalable websites & apps.</p>
-    </div>
-    <div class="service-card">
-      <h3>SEO Optimization</h3>
-      <p>Improve visibility and search engine ranking.</p>
-    </div>
-  </div>
-</section>
+    </nav>
+  </header>
 
-<section id="skills">
-  <h2>My Skills</h2>
-  <div class="skill">
-    <p>HTML</p>
-    <div class="skill-bar"><div class="skill-level" style="width:90%">90%</div></div>
-  </div>
-  <div class="skill">
-    <p>CSS</p>
-    <div class="skill-bar"><div class="skill-level" style="width:85%">85%</div></div>
-  </div>
-  <div class="skill">
-    <p>JavaScript</p>
-    <div class="skill-bar"><div class="skill-level" style="width:80%">80%</div></div>
-  </div>
-</section>
 
-<section id="projects">
-  <h2 class="section-title">My Projects</h2>
-  <div class="projects-grid">
-    <!-- DJ Project with embedded preview + button -->
-    <div class="project">
-      <h3>DJ Website</h3>
-      <p> •Built a responsive website for a DJ brand to showcase mixes and services
-•Features: music player, booking form, and modern UI
-•Tech: HTML, CSS, JavaScript
-•Focus: mobile-friendly design and user experience </p>
-      <div class="iframe-container">
-        <iframe src="https://komosia23.github.io/-BARDEN-THE-DJ/#music" frameborder="0" allowfullscreen></iframe>
+  <main>
+
+    <!-- ================= HERO ================= -->
+
+    <section id="home" class="hero">
+
+      <div class="container hero-content">
+
+        <div class="hero-text">
+
+          <p class="eyebrow">
+            FRONTEND DEVELOPER
+          </p>
+
+          <h1>
+            I build websites
+            <span>people enjoy using.</span>
+          </h1>
+
+          <p class="hero-description">
+            I'm Joshua Komosia, a frontend developer focused on building
+            responsive, modern and user-friendly websites with HTML, CSS
+            and JavaScript.
+          </p>
+
+          <div class="hero-buttons">
+
+            <a href="#projects" class="btn btn-primary">
+              View My Work
+              <span>→</span>
+            </a>
+
+            <a href="#contact" class="btn btn-outline">
+              Let's Talk
+            </a>
+
+          </div>
+
+          <div class="hero-socials">
+
+            <a
+              href="https://github.com/Komosia23"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              GitHub ↗
+            </a>
+
+            <a
+              href="https://www.linkedin.com/in/joshua-komosia-91405b322"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              LinkedIn ↗
+            </a>
+
+          </div>
+
+        </div>
+
+
+        <div class="hero-card">
+
+          <div class="code-window">
+
+            <div class="window-bar">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+
+            <div class="code-content">
+
+              <p>
+                <span class="code-purple">const</span>
+                developer =
+              </p>
+
+              <p class="indent">
+                {
+              </p>
+
+              <p class="indent-2">
+                name:
+                <span class="code-green">
+                  "Joshua Komosia"
+                </span>,
+              </p>
+
+              <p class="indent-2">
+                role:
+                <span class="code-green">
+                  "Frontend Developer"
+                </span>,
+              </p>
+
+              <p class="indent-2">
+                skills: [
+              </p>
+
+              <p class="indent-3">
+                <span class="code-orange">"HTML"</span>,
+                <span class="code-orange">"CSS"</span>,
+              </p>
+
+              <p class="indent-3">
+                <span class="code-orange">"JavaScript"</span>
+              </p>
+
+              <p class="indent-2">
+                ]
+              </p>
+
+              <p class="indent">
+                };
+              </p>
+
+              <p class="cursor-line">
+                <span class="cursor"></span>
+              </p>
+
+            </div>
+
+          </div>
+
+        </div>
+
       </div>
-      <a class="btn-project" href="https://komosia23.github.io/-BARDEN-THE-DJ/#music" target="_blank">View Project →</a>
+
+      <div class="scroll-indicator">
+        <span></span>
+        Scroll to explore
+      </div>
+
+    </section>
+
+
+    <!-- ================= ABOUT ================= -->
+
+    <section id="about" class="section about">
+
+      <div class="container">
+
+        <div class="section-heading">
+
+          <p class="eyebrow">ABOUT ME</p>
+
+          <h2>
+            Turning ideas into
+            <span>digital experiences.</span>
+          </h2>
+
+        </div>
+
+
+        <div class="about-grid">
+
+          <div class="about-text">
+
+            <p class="lead">
+              I'm a frontend developer who enjoys turning ideas into
+              functional and engaging websites.
+            </p>
+
+            <p>
+              I work primarily with HTML, CSS and JavaScript to create
+              responsive websites that work across phones, tablets and
+              desktops.
+            </p>
+
+            <p>
+              I've worked on projects ranging from business and personal
+              websites to platforms designed to solve real-world problems.
+              I care about clean design, usability, responsive layouts
+              and maintainable code.
+            </p>
+
+            <p>
+              I'm continuously improving my skills and looking for
+              opportunities where I can contribute, learn and grow as
+              a developer.
+            </p>
+
+          </div>
+
+
+          <div class="about-highlights">
+
+            <div class="highlight-card">
+              <span class="highlight-number">01</span>
+              <h3>Responsive</h3>
+              <p>
+                Websites designed to work beautifully on every screen.
+              </p>
+            </div>
+
+            <div class="highlight-card">
+              <span class="highlight-number">02</span>
+              <h3>User Focused</h3>
+              <p>
+                Interfaces designed around clarity and usability.
+              </p>
+            </div>
+
+            <div class="highlight-card">
+              <span class="highlight-number">03</span>
+              <h3>Always Learning</h3>
+              <p>
+                Constantly improving my skills and exploring new tools.
+              </p>
+            </div>
+
+            <div class="highlight-card">
+              <span class="highlight-number">04</span>
+              <h3>Problem Solving</h3>
+              <p>
+                Building practical solutions for real-world needs.
+              </p>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ================= SKILLS ================= -->
+
+    <section id="skills" class="section skills">
+
+      <div class="container">
+
+        <div class="section-heading">
+
+          <p class="eyebrow">MY TOOLKIT</p>
+
+          <h2>
+            Technologies I
+            <span>work with.</span>
+          </h2>
+
+        </div>
+
+
+        <div class="skills-grid">
+
+          <div class="skill-card">
+
+            <div class="skill-icon">
+              HTML
+            </div>
+
+            <h3>HTML5</h3>
+
+            <p>
+              Semantic, accessible and well-structured web pages.
+            </p>
+
+          </div>
+
+
+          <div class="skill-card">
+
+            <div class="skill-icon">
+              CSS
+            </div>
+
+            <h3>CSS3</h3>
+
+            <p>
+              Responsive layouts, animations and modern UI styling.
+            </p>
+
+          </div>
+
+
+          <div class="skill-card">
+
+            <div class="skill-icon">
+              JS
+            </div>
+
+            <h3>JavaScript</h3>
+
+            <p>
+              Interactive features and dynamic web experiences.
+            </p>
+
+          </div>
+
+
+          <div class="skill-card">
+
+            <div class="skill-icon">
+              Git
+            </div>
+
+            <h3>Git & GitHub</h3>
+
+            <p>
+              Version control and managing development projects.
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ================= PROJECTS ================= -->
+
+    <section id="projects" class="section projects">
+
+      <div class="container">
+
+        <div class="section-heading projects-heading">
+
+          <div>
+
+            <p class="eyebrow">SELECTED WORK</p>
+
+            <h2>
+              Projects I've
+              <span>built.</span>
+            </h2>
+
+          </div>
+
+          <p class="section-intro">
+            A selection of projects that demonstrate my approach to
+            design, development and problem solving.
+          </p>
+
+        </div>
+
+
+        <div class="projects-list">
+
+
+          <!-- PROJECT 01 -->
+
+          <article class="project-card featured">
+
+            <div class="project-preview dj-preview">
+
+              <div class="preview-overlay">
+
+                <span class="project-number">
+                  01
+                </span>
+
+                <span class="preview-label">
+                  LIVE PROJECT
+                </span>
+
+              </div>
+
+              <div class="music-visual">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+
+              <h3>BARDEN — DJ</h3>
+
+            </div>
+
+
+            <div class="project-info">
+
+              <p class="project-type">
+                WEB DEVELOPMENT
+              </p>
+
+              <h3>
+                DJ / Music Website
+              </h3>
+
+              <p>
+                A modern website created for a DJ brand to showcase
+                music, services and booking information.
+              </p>
+
+              <div class="project-features">
+
+                <span>Music Player</span>
+                <span>Booking Form</span>
+                <span>Responsive UI</span>
+
+              </div>
+
+              <div class="tech-stack">
+
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+
+              </div>
+
+              <a
+                href="https://komosia23.github.io/-BARDEN-THE-DJ/#music"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="project-link"
+              >
+                View Live Project
+                <span>↗</span>
+              </a>
+
+            </div>
+
+          </article>
+
+
+          <!-- PROJECT 02 -->
+
+          <article class="project-card">
+
+            <div class="project-preview portfolio-preview">
+
+              <div class="preview-overlay">
+
+                <span class="project-number">
+                  02
+                </span>
+
+                <span class="preview-label">
+                  PERSONAL PROJECT
+                </span>
+
+              </div>
+
+              <div class="portfolio-mockup">
+
+                <div class="mockup-nav"></div>
+
+                <div class="mockup-title"></div>
+
+                <div class="mockup-lines"></div>
+
+                <div class="mockup-buttons"></div>
+
+              </div>
+
+            </div>
+
+
+            <div class="project-info">
+
+              <p class="project-type">
+                FRONTEND DEVELOPMENT
+              </p>
+
+              <h3>
+                Personal Portfolio
+              </h3>
+
+              <p>
+                A responsive portfolio website designed to showcase
+                my development skills, projects and experience.
+              </p>
+
+              <div class="tech-stack">
+
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+
+              </div>
+
+              <a
+                href="https://github.com/Komosia23"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="project-link"
+              >
+                View on GitHub
+                <span>↗</span>
+              </a>
+
+            </div>
+
+          </article>
+
+
+          <!-- PROJECT 03 -->
+
+          <article class="project-card">
+
+            <div class="project-preview farm-preview">
+
+              <div class="preview-overlay">
+
+                <span class="project-number">
+                  03
+                </span>
+
+                <span class="preview-label">
+                  REAL-WORLD SOLUTION
+                </span>
+
+              </div>
+
+              <div class="farm-icon">
+                🌱
+              </div>
+
+              <h3>
+                KE FARM LINK
+              </h3>
+
+            </div>
+
+
+            <div class="project-info">
+
+              <p class="project-type">
+                WEB PLATFORM
+              </p>
+
+              <h3>
+                KE Farm Link
+              </h3>
+
+              <p>
+                A platform designed to connect farmers and buyers
+                through product listings and easier communication.
+              </p>
+
+              <div class="project-features">
+
+                <span>Product Listings</span>
+                <span>Buyer Connection</span>
+                <span>Practical Solution</span>
+
+              </div>
+
+              <div class="tech-stack">
+
+                <span>Web</span>
+                <span>UI/UX</span>
+
+              </div>
+
+              <a
+                href="https://ke-farm-link.lovable.app"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="project-link"
+              >
+                View Live Project
+                <span>↗</span>
+              </a>
+
+            </div>
+
+          </article>
+
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ================= CTA ================= -->
+
+    <section class="cta">
+
+      <div class="container">
+
+        <p class="eyebrow">
+          OPEN TO OPPORTUNITIES
+        </p>
+
+        <h2>
+          Let's build something
+          <span>great together.</span>
+        </h2>
+
+        <p>
+          I'm currently looking for junior frontend, web development
+          and internship opportunities.
+        </p>
+
+        <a href="#contact" class="btn btn-primary">
+          Get In Touch
+          <span>→</span>
+        </a>
+
+      </div>
+
+    </section>
+
+
+    <!-- ================= CONTACT ================= -->
+
+    <section id="contact" class="section contact">
+
+      <div class="container">
+
+        <div class="section-heading">
+
+          <p class="eyebrow">CONTACT</p>
+
+          <h2>
+            Have an opportunity?
+            <span>Let's talk.</span>
+          </h2>
+
+        </div>
+
+
+        <div class="contact-grid">
+
+          <div class="contact-text">
+
+            <p>
+              Whether you have a job opportunity, freelance project,
+              collaboration or simply want to connect, I'd be happy
+              to hear from you.
+            </p>
+
+            <div class="contact-links">
+
+              <a href="mailto:your-email@example.com">
+                <span>Email</span>
+                your-email@example.com
+              </a>
+
+              <a
+                href="https://www.linkedin.com/in/joshua-komosia-91405b322"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <span>LinkedIn</span>
+                Connect with me ↗
+              </a>
+
+              <a
+                href="https://github.com/Komosia23"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <span>GitHub</span>
+                View my repositories ↗
+              </a>
+
+            </div>
+
+          </div>
+
+
+          <form class="contact-form">
+
+            <div class="form-group">
+
+              <label for="name">
+                Name
+              </label>
+
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Your name"
+                required
+              >
+
+            </div>
+
+
+            <div class="form-group">
+
+              <label for="email">
+                Email
+              </label>
+
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="your@email.com"
+                required
+              >
+
+            </div>
+
+
+            <div class="form-group">
+
+              <label for="message">
+                Message
+              </label>
+
+              <textarea
+                id="message"
+                name="message"
+                rows="5"
+                placeholder="Tell me about the opportunity..."
+                required
+              ></textarea>
+
+            </div>
+
+
+            <button type="submit" class="btn btn-primary">
+              Send Message
+              <span>→</span>
+            </button>
+
+          </form>
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <!-- ================= FOOTER ================= -->
+
+  <footer class="footer">
+
+    <div class="container footer-content">
+
+      <a href="#home" class="logo">
+        Joshua<span>.</span>
+      </a>
+
+      <p>
+        © 2026 Joshua Komosia. Built with HTML, CSS & JavaScript.
+      </p>
+
+      <div class="footer-socials">
+
+        <a
+          href="https://github.com/Komosia23"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          GitHub
+        </a>
+
+        <a
+          href="https://www.linkedin.com/in/joshua-komosia-91405b322"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          LinkedIn
+        </a>
+
+        <a
+          href="https://www.instagram.com/barden_ke"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Instagram
+        </a>
+
+      </div>
+
     </div>
 
-    <div class="project">
-      <h3>Portfolio Website</h3>
-      <p>A personal portfolio website showcasing my skills and projects in web development.
-Designed with a clean layout and responsive design for all devices.
-Tech: HTML, CSS, JavaScript.</p>
-      <a class="btn-project" href="https://github.com/Komosia23" target="_blank">View Project →</a>
-    </div>
+  </footer>
 
-    <div class="project">
-      <h3>KE Farm Link</h3>
-      <p>A platform that connects farmers and buyers with product listings and easy communication.</p>
-      <a class="btn-project" href="https://ke-farm-link.lovable.app" target="_blank">View Project →</a>
-    </div>
-  </div>
-</section>
 
-<section id="contact">
-  <h2>Contact Me</h2>
-  <form>
-    <input type="text" placeholder="Your Name" required>
-    <input type="email" placeholder="Your Email" required>
-    <textarea placeholder="Your Message" required></textarea>
-    <button type="submit">Send Message</button>
-  </form>
-</section>
+  <!-- ================= JAVASCRIPT ================= -->
 
-<footer>
-  <p>© 2025 Joshua Komosia. All rights reserved.</p>
-  <div class="socials">
-    <a href="https://www.linkedin.com/in/joshua-komosia-91405b322" target="_blank">LinkedIn</a>
-    <a href="https://github.com/Komosia23" target="_blank">GitHub</a>
-    <a href="https://www.instagram.com/barden_ke" target="_blank">Instagram</a>
-    <a href="https://www.facebook.com/BARDEN.KE" target="_blank">Facebook</a>
-  </div>
-</footer>
+  <script>
 
-<script>
-window.addEventListener('scroll', function() {
-  const skills = document.querySelectorAll('.skill-level');
-  skills.forEach(skill => {
-    const rect = skill.getBoundingClientRect();
-    if(rect.top < window.innerHeight - 50) {
-      skill.style.width = skill.getAttribute('style').split(":")[1];
-    }
-  });
-});
-</script>
+    // Mobile navigation
+
+    const menuToggle = document.querySelector(".menu-toggle");
+    const navLinks = document.querySelector(".nav-links");
+
+    menuToggle.addEventListener("click", () => {
+
+      navLinks.classList.toggle("active");
+      menuToggle.classList.toggle("active");
+
+    });
+
+
+    // Close mobile menu after clicking a link
+
+    document.querySelectorAll(".nav-links a").forEach(link => {
+
+      link.addEventListener("click", () => {
+
+        navLinks.classList.remove("active");
+        menuToggle.classList.remove("active");
+
+      });
+
+    });
+
+
+    // Reveal elements when they enter the viewport
+
+    const revealElements =
+      document.querySelectorAll(
+        ".section-heading, .about-text, .highlight-card, .skill-card, .project-card, .contact-grid"
+      );
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+
+        entries.forEach(entry => {
+
+          if (entry.isIntersecting) {
+
+            entry.target.classList.add("visible");
+
+          }
+
+        });
+
+      },
+      {
+        threshold: 0.1
+      }
+    );
+
+
+    revealElements.forEach(element => {
+
+      element.classList.add("reveal");
+
+      observer.observe(element);
+
+    });
+
+  </script>
 
 </body>
-      </html>
+</html>
